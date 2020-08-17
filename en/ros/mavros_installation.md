@@ -78,7 +78,7 @@ Now you are ready to do the build
 1. Create workspace & deps
    ```
    wstool merge -t src /tmp/mavros.rosinstall
-   wstool update -t src -j4
+   wstool update -t src -j4    #Can be also used to update your current MAVROS Dist.
    rosdep install --from-paths src --ignore-src -y
    ```
 
@@ -96,6 +96,6 @@ Now you are ready to do the build
    ```
    #Needed or rosrun can't find nodes from this workspace.
    source devel/setup.bash
-   ```
+ ```
 
 In the case of error, there are addition installation and troubleshooting notes in the [mavros repo](https://github.com/mavlink/mavros/tree/master/mavros#installation).
